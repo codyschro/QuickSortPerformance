@@ -62,6 +62,7 @@ public class QuickSortPerformance {
                 // generate a random list of integers for each trial
                 System.out.print("    Generating test data...");
                 long[] newList = createRandomListOfIntegers(inputSize);
+                Arrays.sort(newList); //comment out if want random list
                 System.out.println("...done.");
                 System.out.print("    Running trial batch...");
                 /* force garbage collection before each trial run so it is not included in the time */
